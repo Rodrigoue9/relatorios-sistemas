@@ -63,10 +63,9 @@ function renderTools(tools) {
                 <div class="card-footer">
                     <div class="price">
                         ${tool.price !== 'Grátis+' && tool.price !== 'Sob Consulta' && tool.price !== 'Variável' && tool.price !== 'Por Mensagem' ? tool.price + '<span> /mês</span>' : tool.price}
-                    </div>
-                    <button class="visit-btn">
+                    <a href="${tool.link}" target="_blank" class="visit-btn" style="text-decoration: none; display: flex; align-items: center; justify-content: center;">
                         Acessar Site <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </button>
+                    </a>
                 </div>
             </div>
         `;
