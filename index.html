@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório Executivo | Busca de Plataformas Integradas</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-orb orb-3"></div>
+
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fa-solid fa-chart-pie text-gradient"></i>
+                <span>Relatório Executivo</span>
+            </div>
+            <nav class="nav-links">
+                <a href="#" class="active">Painel</a>
+            </nav>
+            <div class="actions">
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="badge">📊 Levantamento de Mercado</span>
+                    <h1>Mapeamento de <span class="text-gradient">Sistemas Integrados</span><br>para a Operação</h1>
+                    <p>Mecanismo de pesquisa pelas principais soluções mapeadas que reúnem WhatsApp, CRM, Chatbot e
+                        E-mail em um só sistema.</p>
+
+                    <div class="search-container">
+                        <div class="search-box">
+                            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                            <input type="text" id="searchInput"
+                                placeholder="Pesquise por requisito: 'Tudo em um', 'WhatsApp', 'CRM'..."
+                                autocomplete="off">
+                            <button id="clearBtn" class="clear-btn"><i class="fa-solid fa-xmark"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="quick-filters" id="quickFilters">
+                        <button class="filter-tag active" data-filter="all">Todos</button>
+                        <button class="filter-tag"
+                            style="border-color: #6366f1; color: #a5b4fc; box-shadow: 0 0 10px rgba(99,102,241,0.2)"
+                            data-filter="allinone"><i class="fa-solid fa-star"></i> Sistema Integrado
+                            (All-in-One)</button>
+                        <button class="filter-tag" data-filter="whatsapp"><i class="fa-brands fa-whatsapp"></i>
+                            WhatsApp</button>
+                        <button class="filter-tag" data-filter="crm"><i class="fa-solid fa-users"></i> CRM</button>
+                        <button class="filter-tag" data-filter="chatbot"><i class="fa-solid fa-robot"></i>
+                            Chatbot</button>
+                        <button class="filter-tag" data-filter="email"><i class="fa-solid fa-envelope"></i>
+                            E-mail</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="results-section">
+            <div class="container">
+                <div class="results-header">
+                    <h2 id="resultsTitle">Plataformas Pré-Mapeadas</h2>
+                    <span id="resultsCount">0 encontradas</span>
+                </div>
+
+                <div class="tools-grid" id="toolsGrid">
+                    <!-- Cards inseridos via JavaScript -->
+                </div>
+
+                <div class="no-results" id="noResults" style="display: none;">
+                    <div class="no-results-icon">
+                        <i class="fa-solid fa-ghost"></i>
+                    </div>
+                    <h3>Nenhuma ferramenta encontrada</h3>
+                    <p>Tente buscar por outros termos ou remova os filtros selecionados.</p>
+                    <button class="btn btn-primary mt-4"
+                        onclick="document.querySelector('[data-filter=\'all\']').click()">Limpar Filtros</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Mapeamento Tecnológico. Documento Interno e Confidencial.</p>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
