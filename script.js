@@ -8,10 +8,12 @@ const filterTags = document.querySelectorAll('.filter-tag');
 const resultsCount = document.getElementById('resultsCount');
 const resultsTitle = document.getElementById('resultsTitle');
 const noResults = document.getElementById('noResults');
+const hideActiveCb = document.getElementById('hideActiveCb');
 
 // Estado atual
 let currentFilter = 'all';
 let currentSearch = '';
+let hideActive = true;
 
 // Iniciar a aplicação
 function init() {
@@ -60,7 +62,12 @@ function renderTools(tools) {
                     ${tagsHtml}
                 </div>
                 
-                <div class="card-footer">
+                <div class="card-contra" style="margin-top: 15px; padding: 12px; border-radius: 8px; background-color: #fef2f2; border-left: 4px solid #ef4444; font-size: 13px; color: #7f1d1d;">
+                    <strong><i class="fa-solid fa-triangle-exclamation"></i> Ponto de Atenção:</strong><br>
+                    ${tool.contra}
+                </div>
+                
+                <div class="card-footer" style="margin-top: 20px;">
                     <div class="price">
                         ${tool.price !== 'Grátis+' && tool.price !== 'Sob Consulta' && tool.price !== 'Variável' && tool.price !== 'Por Mensagem' ? tool.price + '<span> /mês</span>' : tool.price}
                     <a href="${tool.link}" target="_blank" class="visit-btn" style="text-decoration: none; display: flex; align-items: center; justify-content: center;">
@@ -105,6 +112,11 @@ function filterAndSearch() {
         );
     }
 
+    // Exclude ActiveCampaign
+    if (hideActive) {
+        filteredData = filteredData.filter(tool => !tool.name.toLowerCase().includes('activecampaign'));
+    }
+
     renderTools(filteredData);
 
     // Manage Clear Button visibility
@@ -122,6 +134,14 @@ function setupEventListeners() {
         currentSearch = e.target.value;
         filterAndSearch();
     });
+
+    // Hide ActiveCampaign Checkbox
+    if (hideActiveCb) {
+        hideActiveCb.addEventListener('change', (e) => {
+            hideActive = e.target.checked;
+            filterAndSearch();
+        });
+    }
 
     // Clear Button
     clearBtn.addEventListener('click', () => {

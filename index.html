@@ -42,7 +42,12 @@
             <div class="container">
                 <div class="hero-content">
                     <span class="badge">📊 Levantamento de Mercado</span>
-                    <h1>Mapeamento de <span class="text-gradient">Sistemas Integrados</span><br>para a Operação</h1>
+                    <h1>Mapeamento de <span class="text-gradient">Sistemas Integrados</span><br>para a Operação<br>
+                        <span
+                            style="font-size: 0.6em; font-weight: 500; color: var(--text-muted); display: block; margin-top: 10px;">
+                            Relatório para DR RONALDO
+                        </span>
+                    </h1>
                     <p>Mecanismo de pesquisa pelas principais soluções mapeadas que reúnem WhatsApp, CRM, Chatbot e
                         E-mail em um só sistema.</p>
 
@@ -54,6 +59,14 @@
                                 autocomplete="off">
                             <button id="clearBtn" class="clear-btn"><i class="fa-solid fa-xmark"></i></button>
                         </div>
+                    </div>
+
+                    <div class="extra-filters"
+                        style="margin-top: 15px; display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 14px; color: var(--text-muted);">
+                        <input type="checkbox" id="hideActiveCb" checked
+                            style="accent-color: #6366f1; cursor: pointer; width: 16px; height: 16px;">
+                        <label for="hideActiveCb" style="cursor: pointer; user-select: none;">Ocultar
+                            <b>ActiveCampaign</b> (Ferramenta em uso)</label>
                     </div>
 
                     <div class="quick-filters" id="quickFilters">

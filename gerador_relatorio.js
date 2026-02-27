@@ -7,123 +7,134 @@ const b2bMarketDatabase = [
     {
         name: "Blubash",
         link: "https://blubash.com.br",
-        desc: "Uma das plataformas mais completas 'Tudo em Um'. Oferece atendimento Omnichannel, Chatbot avançado, CRM nativo e campanhas para WhatsApp, Email e Instagram num ecossistema único sem gambiarras.",
+        desc: "Uma das plataformas mais completas 'Tudo em Um'. Oferece atendimento Omnichannel, Chatbot avançado, CRM nativo e campanhas para WhatsApp, Email e Instagram num ecossistema único sem gambiarras. 💰 Preços: A partir de R$ 149/mês (Atendentes base) a R$ 499 (Tudo Liberado).",
         tags: ["Tudo em Um", "WhatsApp", "Chatbot", "Omnichannel", "CRM", "E-mail"],
         categories: ["allinone", "whatsapp", "chatbot", "crm", "email"],
         brandClass: "brand-blubash",
         icon: "fa-rocket",
         price: "Completo",
-        rating: 4.9
+        rating: 4.9,
+        contra: "Menor visibilidade global de marca comparada com HubSpot e RD Station."
     },
     {
         name: "RD Station + Conversas",
         link: "https://www.rdstation.com",
-        desc: "Líder no Brasil para Marketing Corporativo. Essencialmente CRM e E-mail, mas conta com o módulo Tallos para automação de WhatsApp e bots de triagem.",
+        desc: "Líder no Brasil para Marketing Corporativo. Essencialmente CRM e E-mail, mas conta com o módulo Tallos para automação de WhatsApp e bots de triagem. 💰 Preços: Marketing a partir de R$ 68,90 (Light), Módulo de WhatsApp (Conversas) a partir de R$ 349/mês.",
         tags: ["CRM", "E-mail", "Automação", "WhatsApp (módulo)"],
         categories: ["email", "crm", "whatsapp"],
         brandClass: "brand-rdstation",
         icon: "fa-chart-line",
         price: "Modular",
-        rating: 4.6
+        rating: 4.6,
+        contra: "O módulo de WhatsApp ('Conversas' da antiga Tallos) engessa um pouco fluxos omnichannel completos, limitando o CRM ao MKT."
     },
     {
         name: "Kommo (amoCRM)",
         link: "https://kommo.com/pt/",
-        desc: "CRM focado puramente em Vendas via Mensageiros. Destaca-se por rodar muito bem o funil de negócios direto do WhatsApp, Facebook e Instagram com chatbots simples.",
+        desc: "CRM focado puramente em Vendas via Mensageiros. Destaca-se por rodar muito bem o funil de negócios direto do WhatsApp, Facebook e Instagram com chatbots simples. 💰 Preços: Planos a partir de U$ 15/usuário/mês até U$ 45 (Enterprise).",
         tags: ["CRM", "WhatsApp", "Chatbot", "Vendas"],
         categories: ["crm", "whatsapp", "chatbot"],
         brandClass: "brand-hubspot",
         icon: "fa-message",
         price: "Acessível",
-        rating: 4.7
+        rating: 4.7,
+        contra: "Fraco para disparos massivos de marketing ou construção de de chatbots muito robustos de auto-atendimento."
     },
     {
         name: "ActiveCampaign",
         link: "https://www.activecampaign.com/br",
-        desc: "Plataforma premium para jornada de E-mail Marketing e CRM de relacionamento. Possui integrações via parceiros para WhatsApp, sendo a fundação para campanhas de e-mail agressivas.",
+        desc: "Plataforma premium para jornada de E-mail Marketing e CRM de relacionamento. Possui integrações via parceiros para WhatsApp, sendo a fundação para campanhas de e-mail agressivas. 💰 Preços: A partir de U$ 15/mês (Lite) a U$ 149/mês (Pro) dependendo da base de contatos.",
         tags: ["E-mail", "CRM", "Automação"],
         categories: ["email", "crm"],
         brandClass: "brand-activecampaign",
         icon: "fa-envelope-open-text",
         price: "Avançado",
-        rating: 4.8
+        rating: 4.8,
+        contra: "Não tem WPP WhatsApp/Chatbot nativo para conversas 1:1, exige pagar para integrações de terceiros como o Zenvia/Twilio encarecendo e dobrando os hubs."
     },
     {
         name: "Zenvia Customer Cloud",
         link: "https://zenvia.com",
-        desc: "Foco pesado em infraestrutura corporativa de disparo em massa e chatbots multicanal (WhatsApp/SMS). Requer configurações avançadas para operar como CRM visual completo.",
+        desc: "Foco pesado em infraestrutura corporativa de disparo em massa e chatbots multicanal (WhatsApp/SMS). Requer configurações avançadas para operar como CRM visual completo. 💰 Preços: Maioria sob consulta (Enterprise), mas planos base em torno de R$ 999/mês + consumo de msg.",
         tags: ["WhatsApp API", "Chatbot", "Disparo em Massa", "Omnichannel"],
         categories: ["whatsapp", "chatbot", "allinone"],
         brandClass: "brand-zenvia",
         icon: "fa-comments",
         price: "Corporativo",
-        rating: 4.5
+        rating: 4.5,
+        contra: "Falta um CRM Pipeline nativo no-code, seu forte é de infra de disparo (exige desenvolvedores para a implementação do núcleo via API)."
     },
     {
         name: "Meets CRM",
         link: "https://meets.com.br",
-        desc: "Plataforma 100% brasileira. Une o controle do funil comercial ao atendimento multicanal com chatbot, integra WhatsApp, Instagram e gerencia equipes mistas.",
+        desc: "Plataforma 100% brasileira. Une o controle do funil comercial ao atendimento multicanal com chatbot, integra WhatsApp, Instagram e gerencia equipes mistas. 💰 Preços: A partir de R$ 99/mês (Inicial) até R$ 299/mês (Completo).",
         tags: ["CRM", "Omnichannel", "Chatbot", "WhatsApp"],
         categories: ["crm", "whatsapp", "chatbot", "allinone"],
         brandClass: "brand-activecampaign",
         icon: "fa-users",
         price: "Custo-Benefício",
-        rating: 4.6
+        rating: 4.6,
+        contra: "Automação de Marketing (email) modesta ou praticamente ausente comparado a grandes bigtechs e interface ligeiramente arcaica."
     },
     {
         name: "Take Blip",
         link: "https://www.blip.ai",
-        desc: "Empresa gigante focada na construção de 'Contatos Inteligentes'. Chatbots complexos (IA) para múltiplos canais, mas o módulo de CRM de pipeline de vendas é menos focado.",
+        desc: "Empresa gigante focada na construção de 'Contatos Inteligentes'. Chatbots complexos (IA) para múltiplos canais, mas o módulo de CRM de pipeline de vendas é menos focado. 💰 Preços: Planos iniciais começam em aprox. R$ 1.000/mês + setup corporativo.",
         tags: ["Chatbot Avançado", "IA", "WhatsApp Enterprise", "Omnichannel"],
         categories: ["chatbot", "whatsapp", "allinone"],
         brandClass: "brand-blubash",
         icon: "fa-robot",
         price: "Enterprise",
-        rating: 4.7
+        rating: 4.7,
+        contra: "Alta curva de aprendizado, foca mais nos Contatos/Bots que no Pipeline de Vendas em si. Altíssimo custo de implantação/setup consultivo."
     },
     {
         name: "SleekFlow",
         link: "https://sleekflow.io/pt-br",
-        desc: "Plataforma de comércio e atendimento omnichannel. Focada em criar jornadas de chat e disparo de mensagens no WhatsApp atreladas a pagamento e campanhas.",
+        desc: "Plataforma de comércio e atendimento omnichannel. Focada em criar jornadas de chat e disparo de mensagens no WhatsApp atreladas a pagamento e campanhas. 💰 Preços: Conta free com limites, planos pagos de U$ 79/mês (Pro) a U$ 299/mês (Premium).",
         tags: ["WhatsApp", "Omnichannel", "Vendas", "Chatbot"],
         categories: ["whatsapp", "chatbot"],
         brandClass: "brand-hubspot",
         icon: "fa-bolt",
         price: "Intermediário",
-        rating: 4.5
+        rating: 4.5,
+        contra: "Foca no fluxo de compra Social-Commerce e Social-Selling, menos maduro em gestão de contas longas que emitem invoices complexos (CRM B2B Real)."
     },
     {
         name: "HubSpot",
         link: "https://br.hubspot.com",
-        desc: "O CRM mais robusto do mundo. Ferramenta de marketing, vendas e atendimento. Recentemente incluiu integração oficial de WhatsApp Inbox, tornando-se mais atrativa ao mercado BR.",
+        desc: "O CRM mais robusto do mundo. Ferramenta de marketing, vendas e atendimento. Recentemente incluiu integração oficial de WhatsApp Inbox, tornando-se mais atrativa ao mercado BR. 💰 Preços: CRM base grátis, suítes completas de U$ 800/mês a U$ 3.600/mês (Enterprise).",
         tags: ["CRM Global", "Inbound Marketing", "E-mail", "WhatsApp"],
         categories: ["crm", "email", "allinone"],
         brandClass: "brand-hubspot",
         icon: "fa-hubspot",
         price: "Alto Custo",
-        rating: 4.9
+        rating: 4.9,
+        contra: "Custo-Brasil inviável para algumas operações (dólar pesadíssimo), as funções de multicanais e WPP Inbox atreladas costumam engordar demais o plano."
     },
     {
         name: "Poli Digital",
         link: "https://poli.digital",
-        desc: "Ferramenta nacional voltada para a caixa de entrada Omnichannel com robôs de automação 24/7 e disparo de WhatsApp para pequenas/médias empresas.",
+        desc: "Ferramenta nacional voltada para a caixa de entrada Omnichannel com robôs de automação 24/7 e disparo de WhatsApp para pequenas/médias empresas. 💰 Preços: A partir de R$ 197/mês, subindo conforme número de atendentes e números de WPP.",
         tags: ["WhatsApp", "Omnichannel", "Atendimento"],
         categories: ["whatsapp", "chatbot"],
         brandClass: "brand-zenvia",
         icon: "fa-comment-dots",
         price: "Acessível",
-        rating: 4.4
+        rating: 4.4,
+        contra: "É um hub forte de caixas de entrada de WhatsApp e tickets, mas falta o DNA e profundidade de um CRM de ciclo de venda (Avanços de Pipeline)."
     },
     {
         name: "WAVY / Sinch",
         link: "https://www.sinch.com/pt-br/",
-        desc: "Provedor oficial do WhatsApp. Foco em APIs para desenvolvedores montarem seus próprios CRMs e gateways de disparo, além de e-mail transacional.",
+        desc: "Provedor oficial do WhatsApp. Foco em APIs para desenvolvedores montarem seus próprios CRMs e gateways de disparo, além de e-mail transacional. 💰 Preços: Cobrado primordialmente por volume de mensagens/disparos API em Dólar/Euros.",
         tags: ["API do WhatsApp", "Disparo SMS", "E-mail Corporativo"],
         categories: ["whatsapp", "email"],
         brandClass: "brand-activecampaign",
         icon: "fa-server",
         price: "Por volume",
-        rating: 4.4
+        rating: 4.4,
+        contra: "100% voltado aos desenvolvedores, é uma API e não uma plataforma web bonita onde um diretor vai plugar um número em 10 minutos (Exige codificar)."
     }
 ];
 
@@ -155,6 +166,7 @@ function updateFrontendData(results) {
             tags: item.tags,
             price: item.price,
             link: item.link,
+            contra: item.contra,
             categories: item.categories
         };
     });
