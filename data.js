@@ -34,7 +34,7 @@ const toolsData = [
         "icon": "fa-chart-line",
         "rating": 4.6,
         "reviews": "Sistema Real",
-        "desc": "Líder no Brasil para Marketing Corporativo. Essencialmente CRM e E-mail, mas conta com o módulo Tallos para automação de WhatsApp e bots de triagem. 💰 Preços: Marketing a partir de R$ 68,90 (Light), Módulo de WhatsApp (Conversas) a partir de R$ 349/mês.",
+        "desc": "Líder no Brasil para Marketing Corporativo. Essencialmente CRM e E-mail, mas conta com o módulo Tallos para automação de WhatsApp e bots de triagem. 💰 Preços: Módulos sumários de entrada custam R$ 68, mas suítes corporativas completas (Pro/Enterprise) + WPP (Conversas) facilmente ultrapassam os R$ 2.000 a R$ 4.500/mês.",
         "tags": [
             "CRM",
             "E-mail",
